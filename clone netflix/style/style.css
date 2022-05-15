@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+    --branca: rgb(209, 207, 207);
+    --fonte1: 'PT Sans', sans-serif;
+}
+
+body {
+    background-color: var(--preta);
+    font-family: var(--fonte1);
+    color: var(--branca);
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--branca);
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    color: rgb(151, 151, 151);
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%), url('../img/segredosdedumbledore.jpg');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: var(--fonte1)
+}
+
+.botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+.texto-titulo {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
